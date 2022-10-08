@@ -9,20 +9,38 @@
       margin: 20px;
       line-height: 26px;
     }
-    #top {
-      background-color: #04AA6D;
-      color: #ffff;
-      padding: 15px;
-    }
-    #top h1, #top p, #menubar {
-      margin: 0;
-      padding: 0;
+    .wrapper{
+      position: relative;
+      overflow: auto;
     }
     .menuitem {
       width: 155px;
       background-color: #f1f1f1;
       border: 1px solid #d4d4d4;
+      list-style: none;
     }
+
+    #top {
+      background-color: #04AA6D;
+      color: #ffff;
+      padding: 15px;
+    }
+
+    #top h1, #top p, #menubar {
+      margin: 0;
+      padding: 0;
+    }
+
+    #top, #sidebar, #bottom, .menuitem {
+      border-radius: 4px;
+      margin: 4px;
+    }
+
+    #menubar {
+      width: 200px;
+      float: left;
+    }
+
     #sidebar {
       background-color: #32a4e7;
       color: #ffff;
@@ -40,15 +58,15 @@
   <h1>Welcome to Daeseok Kim's Homepage(21800059)</h1>
   <p>Use the menu to select different Stylesheets</p>
 </div>
-<div id="wrapper">
+<div class="wrapper">
   <div id="left">
     <div id="menubar">
       <ul id = "menulist">
         <li class="menuitem">Stylesheet 1</li>
-        <li>Stylesheet 2</li>
-        <li>Stylesheet 3</li>
-        <li>Stylesheet 4</li>
-        <li>No Style</li>
+        <li class="menuitem">Stylesheet 2</li>
+        <li class="menuitem">Stylesheet 3</li>
+        <li class="menuitem">Stylesheet 4</li>
+        <li class="menuitem">No Style</li>
       </ul>
     </div>
   </div>
