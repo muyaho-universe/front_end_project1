@@ -1,92 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>야호</title>
-  <style>
-    body{
-      font: 100% Lucida Sans, Verdana;
-      margin: 20px;
-      line-height: 26px;
-    }
-    .wrapper{
-      position: relative;
-      overflow: auto;
-    }
-    .menuitem {
-      width: 155px;
-      background-color: #f1f1f1;
-      border: 1px solid #d4d4d4;
-      list-style: none;
-    }
+    <meta charset="UTF-8">
+    <title>야호</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
 
-    #top {
-      background-color: #04AA6D;
-      color: #ffff;
-      padding: 15px;
-    }
+        .wrapper {
+            position: relative;
+            overflow: auto;
+        }
 
-    #top h1, #top p, #menubar {
-      margin: 0;
-      padding: 0;
-    }
+        .container{
+            xmin-width: 900px;
+        }
 
-    #top, #sidebar, #bottom, .menuitem {
-      border-radius: 4px;
-      margin: 4px;
-    }
+        .menuitem {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
+        .menuitem:first-child{
+            background-color: #04AA6D;
+            color: white;
+            font-weight: bold;
+        }
 
-    #menubar {
-      width: 200px;
-      float: left;
-    }
+        #top {
+            background-color: #04AA6D;
+            color: #ffff;
+            padding: 15px;
+        }
 
-    #sidebar {
-      background-color: #32a4e7;
-      color: #ffff;
-      padding: 10px;
-      width: 180px;
-      bottom: 0;
-      top: 0;
-      right: 0;
-      position: absolute;
-    }
-  </style>
+        #top h1, #top p, #menulist {
+            margin: 0;
+            padding: 0;
+        }
+
+        #top, #sidebar, #bottom, .menuitem {
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        #menubar {
+            width: 200px;
+            float: left;
+        }
+
+        #main{
+            padding: 10px;
+            margin: 0 210px;
+        }
+
+        #sidebar {
+            background-color: #32a4e7;
+            color: #ffff;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        #bottom {
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+
+        a{
+            color: #000;
+            text-decoration: underline;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            #menubar{
+                width: auto;
+                float: none;
+            }
+            #main{
+                margin: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-<div id="top">
-  <h1>Welcome to Daeseok Kim's Homepage(21800059)</h1>
-  <p>Use the menu to select different Stylesheets</p>
-</div>
-<div class="wrapper">
-  <div id="left">
-    <div id="menubar">
-      <ul id = "menulist">
-        <li class="menuitem">Stylesheet 1</li>
-        <li class="menuitem">Stylesheet 2</li>
-        <li class="menuitem">Stylesheet 3</li>
-        <li class="menuitem">Stylesheet 4</li>
-        <li class="menuitem">No Style</li>
-      </ul>
+<div class="wrapper container">
+    <div id="top">
+        <h1>Welcome to Daeseok Kim's Homepage(21800059)</h1>
+        <p>Use the menu to select different Stylesheets</p>
     </div>
-  </div>
-  <div id="center">
-    <div id = "main">
-      <h1>Same Page Different Stylesheets</h1>
-      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
-      <h2>No Styles</h2>
-      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+    <div class="wrapper">
+        <div id="menubar">
+            <ul id="menulist">
+                <li class="menuitem">Stylesheet 1</li>
+                <li class="menuitem">Stylesheet 2</li>
+                <li class="menuitem">Stylesheet 3</li>
+                <li class="menuitem">Stylesheet 4</li>
+                <li class="menuitem">No Style</li>
+            </ul>
+        </div>
+        <div id="center">
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                    change the layout of this page by selecting different stylesheets in the menu, or by selecting one of
+                    the following links:</p>
+                <a href="#">Stylesheet1</a>
+                <a href="#">Stylesheet2</a>
+                <a href="#">Stylesheet3</a>
+                <a href="#">Stylesheet4</a>
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                    looks like with no stylesheet:</p>
+                <a href="#">No Stylesheet</a>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <h3>Side-bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat.</p>
+        </div>
+
     </div>
-  </div>
-
-  <div id="sidebar">
-    <h3>Side-bar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-  </div>
-
-</div>
-<div id="bottom">
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
 </div>
 </body>
 </html>
