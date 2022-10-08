@@ -46,6 +46,56 @@
             color: #d14836;
         }
 
+        #sidebar{
+            background-color: #F6DAD7;
+            color: #d14836;
+            padding: 10px;
+        }
+
+        #bottom{
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            color: #ffffff;
+        }
+
+        #menulist{
+            padding: 0;
+            font: 16px Verdana;
+        }
+
+        .menuitem{
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .menuitem:nth-child(2){
+            background-color: #ffffff;
+            color: #d14836;
+            font-weight: bold;
+        }
+
+        .menuitem:hover{
+            background-color: #ffffff;
+            color: #d14836;
+        }
+
+        a{
+            color: #d14836;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -58,10 +108,10 @@
             <div id="menubar">
                 <ul id = "menulist">
                     <li class="menuitem">Stylesheet 1</li>
-                    <li>Stylesheet 2</li>
-                    <li>Stylesheet 3</li>
-                    <li>Stylesheet 4</li>
-                    <li>No Style</li>
+                    <li class="menuitem">Stylesheet 2</li>
+                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem">No Style</li>
                 </ul>
             </div>
             <div id = "main">
