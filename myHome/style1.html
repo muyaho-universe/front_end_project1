@@ -32,6 +32,10 @@
             font-weight: bold;
         }
 
+        .menuitem:hover{
+            background-color: white;
+        }
+
         #top {
             background-color: #04AA6D;
             color: #ffff;
@@ -87,6 +91,14 @@
             text-decoration: none;
         }
 
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
         @media (max-width: 600px) {
             #menubar{
                 width: auto;
@@ -107,11 +119,11 @@
     <div class="wrapper">
         <div id="menubar">
             <ul id="menulist">
-                <a href="#" style="text-decoration: #04AA6D"><li class="menuitem">Stylesheet 1</li></a>
-                <li class="menuitem"><a href="style2.html" style="text-decoration: #d4d4d4">Stylesheet 2</a></li>
+                <li class="menuitem" onclick="location.href='#'">Stylesheet 1</li>
+                <li class="menuitem" onclick="location.href='style2.html'">Stylesheet 2</li>
                 <li class="menuitem">Stylesheet 3</li>
                 <li class="menuitem">Stylesheet 4</li>
-                <li class="menuitem"> <a href="noStyle.html"  style="text-decoration: #d4d4d4">No Stylesheet</a></li>
+                <li class="menuitem" onclick="location.href='noStyle.html'">No Stylesheet</li>
             </ul>
         </div>
         <div id="center">
@@ -119,15 +131,21 @@
                 <h1>Same Page Different Stylesheets</h1>
                 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
                     change the layout of this page by selecting different stylesheets in the menu, or by selecting one of
-                    the following links:</p>
-                <a href="#">Stylesheet1</a>
-                <a href="style2.html">Stylesheet2</a>
-                <a href="#">Stylesheet3</a>
-                <a href="#">Stylesheet4</a>
+                    the following links:
+                    <br>
+                    <a href="#">Stylesheet1</a>,
+                    <a href="style2.html">Stylesheet2</a>,
+                    <a href="#">Stylesheet3</a>,
+                    <a href="#">Stylesheet4</a>.
+                </p>
+
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
-                    looks like with no stylesheet:</p>
-                <a href="noStyle.html">No Stylesheet</a>
+                    looks like with no stylesheet:
+                    <br>
+                    <a href="noStyle.html">No Stylesheet</a>.
+                </p>
+
             </div>
         </div>
 
