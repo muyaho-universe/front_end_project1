@@ -23,6 +23,9 @@
     <div id="center">
         <div>Name : <?= $fname?> <?=$lname?></div>
         <div>Gender : <?= $gender?> </div>
+        <div>
+<!--            --><?//= $posititon[0]?>
+        </div>
     </div>
 
 </body>
