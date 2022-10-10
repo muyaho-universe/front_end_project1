@@ -1,6 +1,12 @@
 <?php
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
+    $gender = $_POST['gender'];
+    for($i=0; $i<count($_POST['fav_language']); $i++){
+
+        $position = $_POST['fav_language'];
+        echo $position[i];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +21,8 @@
         <h3>Welcome <?=$fname?>!</h3>
     </div>
     <div id="center">
-        <div>이름 : <?= $fname?> <?=$lname?>.</div>
+        <div>Name : <?= $fname?> <?=$lname?></div>
+        <div>Gender : <?= $gender?> </div>
     </div>
 
 </body>
