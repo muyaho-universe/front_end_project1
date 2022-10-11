@@ -2,11 +2,11 @@
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $gender = $_POST['gender'];
-    for($i=0; $i<count($_POST['fav_language']); $i++){
-
-        $position = $_POST['fav_language'];
-        echo $position[i];
-    }
+//    for($i=0; $i<count($_POST['fav_language']); $i++){
+//
+//        $position = $_POST['fav_language'];
+//        echo $position[i];
+//    }
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +23,13 @@
     <div id="center">
         <div>Name : <?= $fname?> <?=$lname?></div>
         <div>Gender : <?= $gender?> </div>
-        <div>
-<!--            --><?//= $posititon[0]?>
-        </div>
+        <?for ($i =0; $i<count($_POST['fav_language']); $i++){
+            ?>
+            <?$position = $_POST['fav_language'];
+            echo $position[$i];?>
+            <?
+        }
+        ?>
     </div>
 
 </body>
