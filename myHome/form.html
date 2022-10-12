@@ -18,9 +18,9 @@
                     <input type="text" id="fname" name="fname"> </br>
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" name="lname"><br>
+                    <h2>Color</h2>
                     <label for="color">Color:</label><br>
-                    <input type="color" id="color" name="color">
-
+                    <input type="color" id="color" name="color" value='#0000ff'>
                 <h2>Gender</h2>
                     <input type="radio" id="male" name="gender" value="Male">
                     <label for="male">남자</label>
@@ -41,6 +41,7 @@
                     <label for="birthday">Birthday: </label>
                     <input type="date" id="birthday" name="birthday">
                 <br>
+                    <h2>학부</h2>
                 <li>
                     <label class="reg" for="uclass">학부</label>
                     <select id="uclass" name="uclass">
@@ -50,6 +51,17 @@
                         <option value="AI융합교육원">AI융합교육원</option>
                     </select>
                 </li>
+                    <h2>성적 :</h2>
+                     <input type="text" name="grade" list="depList"><br>
+                    <datalist id="depList">
+                        <option value="A+"></option>
+                        <option value="A0"></option>
+                        <option value="B+"></option>
+                        <option value="B0"></option>
+                        <option value="C+"></option>
+                        <option value="C0"></option>
+                        <option value="F"></option>
+                    </datalist>
 
                 <h2>Comments</h2>
                     <label for="comment">Comment: </label><br>

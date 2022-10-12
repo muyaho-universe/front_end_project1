@@ -3,9 +3,11 @@
     $lname = $_POST['lname'];
     $color = $_POST['color'];
     $gender = $_POST['gender'];
+    $grade =$_POST['grade'];
     $birthday = $_POST['birthday'];
     $major= $_POST['uclass'];
     $comment = $_POST['comment'];
+    $noFavoriteLanguage = "No favorite language.";
 ?>
 
 <!DOCTYPE html>
@@ -22,25 +24,17 @@
     <div id="center">
         <div>Name : <?= $fname?> <?=$lname?></div>
         <div>
-            Your favorite color: <?=$color?>
+            Your favorite color: <div style="color:<?=$color?>; background-color:<?=$color?>" >a</div>
         </div>
         <div>Gender : <?= $gender?> </div>
         <div>Favorite language:
-            <? if(count($_POST['fav_language'] ==0)){
-                ?>
-                <div>No favorite language</div>
-            <?} else{?>
-                <?for ($i =0; $i<count($_POST['fav_language']); $i++){?>
-                    <?$position = $_POST['fav_language'];?>
-                    <?echo $position[$i];?>
-                    <?
-                }
-                ?>
-            <?
-            }?>
 
-
-
+            <?for ($i =0; $i<count($_POST['fav_language']); $i++){?>
+                <?$position = $_POST['fav_language'];?>
+                <?echo $position[$i];?>
+                <?
+            }
+            ?>
         </div>
         <div>Birthday: <?=$birthday?></div>
         <div>Major: <?=$major?></div>
