@@ -2,11 +2,9 @@
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $gender = $_POST['gender'];
-//    for($i=0; $i<count($_POST['fav_language']); $i++){
-//
-//        $position = $_POST['fav_language'];
-//        echo $position[i];
-//    }
+    $birthday = $_POST['birthday'];
+    $major= $_POST['uclass'];
+    $comment = $_POST['comment'];
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +21,7 @@
     <div id="center">
         <div>Name : <?= $fname?> <?=$lname?></div>
         <div>Gender : <?= $gender?> </div>
+        <div>Favorite language:
         <?for ($i =0; $i<count($_POST['fav_language']); $i++){
             ?>
             <?$position = $_POST['fav_language'];
@@ -30,6 +29,13 @@
             <?
         }
         ?>
+        </div>
+        <div>Birthday: <?=$birthday?></div>
+        <div>Major: <?=$major?></div>
+        <div>
+            Comment:<br>
+            <?=$comment?>
+        </div>
     </div>
 
 </body>
