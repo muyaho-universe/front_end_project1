@@ -28,15 +28,17 @@
                     <label for="female">여자</label>
 
                 <h2>Favorite language</h2>
-                    <input type="checkbox" id="c" name="fav_language[]" value="C">
-                    <label for="c">C</label>
-                    <input type="checkbox" id="c++" name="fav_language[]" value="C++">
-                    <label for="c++">C++</label>
-                    <input type="checkbox" id="java" name="fav_language[]" value="Java">
-                    <label for="java">Java</label>
-                    <input type="checkbox" id="python" name="fav_language[]" value="Python">
-                    <label for="python">Python</label>
-
+                    <fieldset>
+                    <legend>Choose your favorite language</legend>
+                        <input type="checkbox" id="c" name="fav_language[]" value="C">
+                        <label for="c">C</label>
+                        <input type="checkbox" id="c++" name="fav_language[]" value="C++">
+                        <label for="c++">C++</label>
+                        <input type="checkbox" id="java" name="fav_language[]" value="Java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="python" name="fav_language[]" value="Python">
+                        <label for="python">Python</label>
+                    </fieldset>
                 <h2>Birthday</h2>
                     <label for="birthday">Birthday: </label>
                     <input type="date" id="birthday" name="birthday">
@@ -45,10 +47,22 @@
                 <li>
                     <label class="reg" for="uclass">학부</label>
                     <select id="uclass" name="uclass">
-                        <option value="공간환경시스템공학부">공간환경시스템공학부</option>
-                        <option value="기계제어공학부">기계제어공학부</option>
-                        <option value="전산전자공학부" selected>전산전자공학부</option>
-                        <option value="AI융합교육원">AI융합교육원</option>
+                        <optgroup label="공학부">
+                            <option value="공간환경시스템공학부">공간환경시스템공학부</option>
+                            <option value="기계제어공학부">기계제어공학부</option>
+                            <option value="전산전자공학부" selected>전산전자공학부</option>
+                        </optgroup>
+                        <optgroup label="인문사회과학부">
+                            <option value="법학부">법학부</option>
+                            <option value="커뮤니케이션학부">커뮤니케이션학부</option>
+                            <option value="경영경제학부">경영경제학부</option>
+                        </optgroup>
+                        <optgroup label="융합학부">
+                            <option value="글로벌리더십학부">글로벌리더십학부</option>
+                            <option value="ICT창업학부">ICT창업학부</option>
+                            <option value="창의융합교육원">창의융합교육원</option>
+                            <option value="AI융합교육원">AI융합교육원</option>
+                        </optgroup>
                     </select>
                 </li>
                     <h2>성적 :</h2>

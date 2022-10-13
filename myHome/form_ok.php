@@ -7,7 +7,6 @@
     $birthday = $_POST['birthday'];
     $major= $_POST['uclass'];
     $comment = $_POST['comment'];
-    $noFavoriteLanguage = "No favorite language.";
 ?>
 
 <!DOCTYPE html>
@@ -38,6 +37,7 @@
         </div>
         <div>Birthday: <?=$birthday?></div>
         <div>Major: <?=$major?></div>
+        <div>Grade: <?=$grade?></div>
         <div>
             Comment:<br>
             <?=$comment?>
