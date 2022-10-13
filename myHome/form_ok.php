@@ -23,7 +23,8 @@
     <div id="center">
         <div>Name : <?= $fname?> <?=$lname?></div>
         <div>
-            Your favorite color: <div style="color:<?=$color?>; background-color:<?=$color?>" >a</div>
+            Your favorite color:
+            <div style="color:<?=$color?>; background-color:<?=$color?>; width: 50px; height: 50px"/>
         </div>
         <div>Gender : <?= $gender?> </div>
         <div>Favorite language:
