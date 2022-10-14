@@ -2,6 +2,7 @@
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $color = $_POST['color'];
+    $age = $_POST['age'];
     $gender = $_POST['gender'];
     $grade =$_POST['grade'];
     $birthday = $_POST['birthday'];
@@ -27,6 +28,7 @@
             <div style="color:<?=$color?>; background-color:<?=$color?>; width: 50px; height: 50px"/>
         </div>
         <div>Gender : <?= $gender?> </div>
+        <div>Age: <?= $age?></div>
         <div>Favorite language:
 
             <?for ($i =0; $i<count($_POST['fav_language']); $i++){?>
