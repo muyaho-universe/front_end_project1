@@ -9,7 +9,7 @@
             var name = document.form1.name;
             if(name.value == ""){
                 alert("이름을 입력하세요");
-                username.focus();
+                name.focus();
                 return false;
             }
             var age = document.form1.age;
@@ -24,9 +24,9 @@
 <body>
     <form name="form1" action="/myHome/add_ok.php" onsubmit="return formValidation()" method="post">
         <label for="name">이름:</label>
-        <input type="text" id="name" name="name" required="required"> </br>
+        <input type="text" id="name" name="name" > </br>
         <label for="age">나이:</label>
-        <input type="number" id="age" name="age" required="required"></br>
+        <input type="number" id="age" name="age" ></br>
         <label>성별:</label>
         <input type="radio" id="male" name="gender" value="남" checked>
         <label for="male">남자</label>
