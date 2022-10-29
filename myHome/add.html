@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>선행 추가</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         function formValidation(){
             var name = document.form1.name;
@@ -17,18 +18,6 @@
                 age.focus();
                 return false;
             }
-            var phone = document.form1.phone;
-            if(phone.value == ""){
-                alert("번호를 입력하세요");
-                phone.focus();
-                return false;
-            }
-            var email = document.form1.email;
-            if(email.value == ""){
-                alert("이메일을 입력하세요");
-                email.focus();
-                return false;
-            }
         }
     </script>
 </head>
@@ -37,7 +26,19 @@
         <label for="name">이름:</label>
         <input type="text" id="name" name="name" required="required"> </br>
         <label for="age">나이:</label>
-        <input type="number" id="age" name="age" required="required">
+        <input type="number" id="age" name="age" required="required"></br>
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="남" checked>
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" value="여">
+        <label for="female">여자</label></br>
+        <label for="goodness">선행정도</label>
+        <select id="goodness" name="goodness">
+            <option value="상"selected>상</option>
+            <option value="중">중</option>
+            <option value="하" >하</option>
+        </select>
+        </br><input type="submit" name="Submit">
     </form>
 </body>
 </html>
