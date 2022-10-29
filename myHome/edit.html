@@ -13,7 +13,7 @@
                 return false;
             }
             var age = document.form1.age;
-            if(age.value == "0"){
+            if(age.value == "" || age.value <= 0){
                 alert("나이를 입력하세요");
                 age.focus();
                 return false;
