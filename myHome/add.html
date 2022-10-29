@@ -19,6 +19,13 @@
                 return false;
             }
         }
+        window.onload = function() {
+            today = new Date();
+            today = today.toISOString().slice(0, 10);
+
+            bir = document.getElementById("date");
+            bir.value = today;
+        }
     </script>
 </head>
 <body>
@@ -38,7 +45,13 @@
             <option value="중">중</option>
             <option value="하" >하</option>
         </select>
-        </br><input type="submit" name="Submit">
+        </br>
+        <label for="date">선행일시: </label>
+        <input type="date" id="date" name="date">
+        </br>
+        <label for="comment">선행내용: </label>
+        <textarea type="content" id="comment" name="comment" cols="20" rows="5"></textarea><br>
+        <input type="submit" name="Submit">
     </form>
 </body>
 </html>

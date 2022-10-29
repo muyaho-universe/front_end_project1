@@ -3,6 +3,8 @@
     $age = $_POST['age'];
     $gender = $_POST['gender'];
     $goodness= $_POST['goodness'];
+    $date = $_POST['date'];
+    $comment = $_POST['comment'];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +23,9 @@
     <div>나이: <?= $age?></div>
     <div>성별: <?= $gender?> </div>
     <div>선행정도: <?= $goodness?></div>
-    
+    <div>선행일시: <?= $date?></div>
+    <div>선행내용: <?= $comment?></div>
+
     
 </div>
 
